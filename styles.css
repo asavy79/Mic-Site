@@ -1,0 +1,329 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.menu {
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+
+}
+.menu .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 5% 0px 5%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu .text .logo {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.menu .text .logo h1 {
+    color: white;
+    font-weight: 25;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.menu .text .destinations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.menu .text .destinations a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+.menu .text .destinations a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(0, 134, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.menu .text .destinations a:hover::after {
+    width: 100%;
+}
+
+.main {
+    margin-top: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    align-content: center;
+
+}
+
+
+.main .learn {
+    width: 500px;
+    padding: 20px;
+}
+
+
+.main .learn h1 {
+    font-size: 70px;
+    font-weight: 1;
+}
+
+
+.main .image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    margin-top: 50px;
+    
+    
+    
+
+}
+.main .image img {
+    margin-right: 20px;
+    border-radius: 10px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 20% 100%, 0% 80%, 0 0);
+}
+
+.main .learn button {
+    background: rgb(8, 136, 255);
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.main .learn button:hover {
+    background: rgb(33, 148, 255);
+}
+
+#window-size {
+    position: fixed;
+    top: 100px;
+    color: white;
+}
+
+.pitch {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-top: 200px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.pitch img {
+    border-radius: 10px;
+}
+
+.who .generalPitch {
+    color: white;
+    font-weight: 1;
+    line-height: 2;
+    font-size: 25px;
+    width: 600px;
+    padding: 20px;
+    margin-left: 30px;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.icons {
+    overflow: hidden;
+    padding: 60px 0px;
+    white-space: nowrap;
+    margin-top: 100px;
+}
+
+.icons .iconsSlide {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 20s infinite linear;
+
+}
+
+.icons i {
+    margin: 0 40px;
+    color: rgb(33, 148, 255);
+}
+
+
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 50px;
+    width: 100%;
+}
+
+.users h1 {
+    color: white;
+    font-weight: lighter;
+}
+
+.users .tabTitles {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 500px;
+    margin-top: 70px;
+}
+
+.users .tabTitles .user {
+    position: relative;
+}
+
+.users .tabTitles .user::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(0, 134, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.users .tabTitles .user.active::after {
+    width: 100%;
+}
+
+.users .tabContents {
+    color: rgb(158, 158, 158);
+    margin-top: 50px;
+    width: 500px;
+    display: none;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.users .tabContents.active {
+    display: flex;
+}
+.featureBox {
+    margin-top: 100px;
+}
+
+.featureBox h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.features .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features .feature h3 {
+    color: white;
+    font-weight: lighter;
+}
+
+.features .feature h3 i {
+    margin-right: 30px;
+    color: rgb(33, 148, 255);
+}
+
+.features .feature p {
+    width: 400px;
+    color: white;
+    margin-top: 40px;
+    line-height: 1.5;
+    color: rgb(158, 158, 158);
+    
+
+    
+}
+
+@media (max-width: 1427px) {
+    .pitch {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1389px) {
+    .main .learn {
+        width: 900px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .users .tabTitles {
+        font-size: 25px;
+        width: 800px;
+    }
+    .users .tabContents {
+        font-size: 20px;
+        width: 800px;
+    }
+
+}

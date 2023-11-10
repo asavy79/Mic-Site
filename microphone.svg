@@ -1,0 +1,24 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 197 197" xml:space="preserve">
+          <style type="text/css">
+            .st0 {
+              fill: #FC0C06;
+            }
+            
+            .st1 {
+              fill: #FFFFFF;
+            }
+          </style>
+          <g id="Layer_2_1_">
+            <g id="Layer_1-2">
+              <path class="st1" d="M139.6,88.1c0,9.3-3.1,18.4-9,25.7l6.6,5.3c7-8.8,10.9-19.7,10.9-31H139.6z" id="a1">
+                <animate attributeName="height" from="0" to="27.5" dur="23s" fill="freeze"></animate>
+              </path>
+              <path class="st1" d="M108,128.1c-22.1,5.2-44.3-8.5-49.5-30.7c-0.7-3.1-1.1-6.2-1.1-9.3h-8.6c0,25.8,19.7,47.2,45.4,49.4v22.6h8.5    v-22.6c2.4-0.2,4.8-0.6,7.1-1.1L108,128.1z" id="a2">
+                <animate attributeName="height" from="0" to="27.5" dur="23s" fill="freeze"></animate>
+              </path>
+              <path class="st1" d="M103.3,36.9h-7.4c-10.7,0-19.8,8.1-21,18.8h20.6v7.7H74.7v6.2h20.8v7.7H74.7v6.2h20.8v7.7H74.7v2.7    c0,10.5,8.5,19,19,19h7.6l19.4,11.6l-2.9-18.4l0,0c2.9-3.4,4.5-7.7,4.4-12.2v-38C122.3,45.3,113.8,36.9,103.3,36.9    C103.3,36.9,103.3,36.9,103.3,36.9z M115.9,65.7L93.7,43.5h8.4c7.6,0,13.8,6.2,13.8,13.8V65.7z" id="a3">
+                <animate attributeName="height" from="0" to="27.5" dur="23s" fill="freeze"></animate>
+              </path>
+            </g>
+          </g>
+        </svg>
