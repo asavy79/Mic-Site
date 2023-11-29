@@ -301,6 +301,108 @@ body {
     
 }
 
+.contact {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contact h1 {
+    text-align: center;
+    color: white;
+    font-weight: 20;
+}
+
+.contact p {
+    color: rgb(158, 158, 158);
+    text-align: center;
+    margin-top: 30px;
+    font-weight: lighter;
+    line-height: 1.5;
+    width: 600px;
+    font-size: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.contact form .enter {
+    margin-top: 30px;
+    padding: 10px;
+    background: black;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 5px;
+    outline: none;
+    color: gray;
+    line-height: 1.5;
+    resize: none;
+}
+
+.contact form .input::-webkit-scrollbar {
+    background: none;
+}
+
+.contact form button {
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background: rgb(8, 136, 255);
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 50px;
+}
+.contact form button:hover {
+    background: rgb(33, 148, 255);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+    margin-top: 300px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+footer div h2 {
+    color: white;
+    font-weight: 20;
+}
+footer div a {
+    color: rgb(158, 158, 158);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+footer div span {
+    color: rgb(158, 158, 158);
+    margin-top: 10px;
+}
+footer div span a {
+    transition: 0.5s;
+}
+footer div span a:hover {
+    color: white;
+}
+
 @media (max-width: 1427px) {
     .pitch {
         flex-direction: column;
@@ -325,5 +427,12 @@ body {
         font-size: 20px;
         width: 800px;
     }
+}
 
+@media (max-width: 910px) {
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
